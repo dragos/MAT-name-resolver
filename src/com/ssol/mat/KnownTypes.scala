@@ -15,5 +15,6 @@ object KnownTypes {
   final val EclipseFile = "scala.tools.eclipse.util.EclipseFile"
   final val CoreFile    = "org.eclipse.core.internal.resources.File"
   final val CorePath    = "org.eclipse.core.runtime.Path"
-    
+  
+  final val DefaultEntry = "scala.collection.mutable.DefaultEntry"
 }

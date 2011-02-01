@@ -25,5 +25,11 @@
             impl="com.ssol.mat.SourceFileResolver">
       </resolver>
    </extension>
+   <extension
+         point="org.eclipse.mat.api.nameResolver">
+      <resolver
+            impl="com.ssol.mat.MapResolver">
+      </resolver>
+   </extension>
 
 </plugin>

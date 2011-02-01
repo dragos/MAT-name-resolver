@@ -12,7 +12,6 @@ class SourceFileResolver extends IClassSpecificNameResolver {
   def resolvePath(o: IObject): String = {
     val obj = HeapObject(o)
     val snapshot = obj.underlying.getSnapshot
-    println("resolving " + o)
     obj.resolve("segments") match {
       case Some(HeapObject(array: IObjectArray)) =>
         val segments = array.getReferenceArray() map (addr => HeapObject(snapshot.getObject(snapshot.mapAddressToId(addr))))
@@ -25,19 +24,16 @@ class SourceFileResolver extends IClassSpecificNameResolver {
   
   def resolveFile(o: IObject): String = {
     val obj = HeapObject(o)
-    println("resolveFile " + o)
     (obj.resolve("path") map ("file: " + _.classSpecificName)) getOrElse null
   }
   
   def resolveEclipseFile(o: IObject): String = {
     val obj = HeapObject(o)
-    println("resolveEclipseFile " + o)
     obj.resolve("underlying") map (_.classSpecificName) getOrElse null
   }
 
   def resolveBatchSourceFile(o: IObject): String = {
     val obj = HeapObject(o)
-    println("resolveBatchSourceFile " + o)
     obj.resolve("file") map (_.classSpecificName) getOrElse null
   }
 

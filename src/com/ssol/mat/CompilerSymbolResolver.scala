@@ -28,7 +28,6 @@ class CompilerSymbolResolver extends IClassSpecificNameResolver {
   
   def resolve(obj: IObject): String = {
     val sym = HeapObject(obj)
-    println("resolving " + obj)
     (for {
       rawName <- sym.resolve("rawname") 
     } yield "%s %s [runId: %s]".format(kind(obj), rawName.classSpecificName, runId(sym))).get
