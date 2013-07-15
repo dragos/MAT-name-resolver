@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Scala name resolver
-Bundle-SymbolicName: com.typesafe.mat.scala_name_resolver;singleton:=true
-Bundle-Version: 0.2.1.qualifier
+Bundle-SymbolicName: com.typesafe.mat.resolver;singleton:=true
+Bundle-Version: 0.1.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.eclipse.mat.api,
  org.scala-ide.scala.library
