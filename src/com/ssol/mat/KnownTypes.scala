@@ -1,12 +1,14 @@
 package com.ssol.mat
 
 object KnownTypes {
-  final val ClassSymbol       = "scala.tools.nsc.symtab.Symbols$ClassSymbol"
-  final val ModuleClassSymbol = "scala.tools.nsc.symtab.Symbols$ModuleClassSymbol"
-  final val ModuleSymbol      = "scala.tools.nsc.symtab.Symbols$ModuleSymbol"
-  final val MethodSymbol      = "scala.tools.nsc.symtab.Symbols$MethodSymbol"
-  final val TermSymbol        = "scala.tools.nsc.symtab.Symbols$TermSymbol"
-  final val TypeSymbol        = "scala.tools.nsc.symtab.Symbols$TypeSymbol"
+  private final val symbolsPackage = "scala.reflect.internal."
+  
+  final val ClassSymbol       = symbolsPackage + "Symbols$ClassSymbol"
+  final val ModuleClassSymbol = symbolsPackage + "Symbols$ModuleClassSymbol"
+  final val ModuleSymbol      = symbolsPackage + "Symbols$ModuleSymbol"
+  final val MethodSymbol      = symbolsPackage + "Symbols$MethodSymbol"
+  final val TermSymbol        = symbolsPackage + "Symbols$TermSymbol"
+  final val TypeSymbol        = symbolsPackage + "Symbols$TypeSymbol"
     
   final val cons = "scala.collection.immutable.$colon$colon"
   final val nil = "scala.collection.immutable.Nil$"
@@ -17,4 +19,6 @@ object KnownTypes {
   final val CorePath    = "org.eclipse.core.runtime.Path"
   
   final val DefaultEntry = "scala.collection.mutable.DefaultEntry"
+    
+  final val Contexts = "scala.tools.nsc.typechecker.Contexts$Context"
 }

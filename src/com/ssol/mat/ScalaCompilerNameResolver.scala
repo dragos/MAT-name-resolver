@@ -4,7 +4,12 @@ import org.eclipse.mat.snapshot.extension.IClassSpecificNameResolver
 import org.eclipse.mat.snapshot.model._
 import org.eclipse.mat.snapshot.extension.Subjects
 
-@Subjects(Array("scala.tools.nsc.symtab.Names$TermName", "scala.tools.nsc.symtab.Names$TypeName"))
+@Subjects(Array("scala.reflect.internal.Names$TermName",
+    "scala.reflect.internal.Names$TermName_R",
+    "scala.reflect.internal.Names$TermName_S",
+    "scala.reflect.internal.Names$TypeName", 
+    "scala.reflect.internal.Names$TypeName_R",
+    "scala.reflect.internal.Names$TypeName_S"))
 class ScalaCompilerNameResolver extends IClassSpecificNameResolver {
   def resolve(obj: IObject): String = {
     val name = HeapObject(obj)
