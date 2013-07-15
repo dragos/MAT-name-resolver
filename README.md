@@ -14,6 +14,15 @@ Point Eclipse (or the MAT stand-alone application) to the following update site:
 
 http://download.scala-ide.org/plugins/mat-name-resolver/site/
 
+Build
+-----
+
+The build is based on maven and tycho:
+
+```
+mvn install
+```
+
 Features 
 ----------
 

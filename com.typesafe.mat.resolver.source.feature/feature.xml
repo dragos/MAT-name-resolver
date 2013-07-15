@@ -2,7 +2,7 @@
 <feature
   id="com.typesafe.mat.resolver.source.feature"
   label="Scala name resolver sources"
-  version="0.1.0.qualifier"
+  version="0.2.0.qualifier"
   provider-name="example.org">
 
   <description url="http://example.org/">

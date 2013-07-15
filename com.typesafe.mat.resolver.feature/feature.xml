@@ -2,7 +2,7 @@
 <feature
       id="com.typesafe.mat.resolver.feature"
       label="Scala name resolver"
-      version="0.1.0.qualifier"
+      version="0.2.0.qualifier"
       provider-name="com.typesafe"
       plugin="com.typesafe.mat.resolver">
 
