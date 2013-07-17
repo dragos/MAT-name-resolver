@@ -6,6 +6,8 @@ import org.eclipse.mat.snapshot.extension.Subject
 
 import KnownTypes._
 
+// introduce an error
+
 @Subject(DefaultEntry)
 class MapResolver extends IClassSpecificNameResolver {
   def resolve(o: IObject): String = {
